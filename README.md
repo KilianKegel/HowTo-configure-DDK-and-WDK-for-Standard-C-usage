@@ -16,7 +16,7 @@ HowTo make free of charge Microsoft command line build environments usable for A
 @echo off
 set DDKROOTDIR=c:\winddk\7600.16385.1\
 set BASEDIR=%DDKROOTDIR%
-set PATH=%DDKROOTDIR%bin\x86\x86;%PATH%
+set PATH=%DDKROOTDIR%bin\x86\x86;%DDKROOTDIR%\bin\x86;%PATH%
 set INCLUDE=%DDKROOTDIR%INC\CRT;%DDKROOTDIR%INC\API
 set LIB=%DDKROOTDIR%LIB\CRT\i386;%DDKROOTDIR%LIB\WIN7\i386;
 cmd /k title 32-Bit Standard C Build environment
@@ -28,7 +28,7 @@ cmd /k title 32-Bit Standard C Build environment
 @echo off
 set DDKROOTDIR=c:\winddk\7600.16385.1\
 set BASEDIR=%DDKROOTDIR%
-set PATH=%DDKROOTDIR%\bin\x86\amd64;%PATH%
+set PATH=%DDKROOTDIR%\bin\x86\amd64;%DDKROOTDIR%\bin\x86;%PATH%
 set INCLUDE=%DDKROOTDIR%\INC\CRT;%DDKROOTDIR%\INC\API
 set LIB=%DDKROOTDIR%\LIB\CRT\AMD64;%DDKROOTDIR%\LIB\WIN7\AMD64;
 cmd /k title 64-Bit Standard C Build environment
